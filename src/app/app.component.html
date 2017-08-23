@@ -52,9 +52,11 @@
         <option *ngFor="let option of selectOptions" [value]="option.value">{{option.value}}</option>
       </select>
     </div>
-    <div id="test5"><agm-map [latitude]="lat" [longitude]="lng">
-      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-    </agm-map></div>
+    <div id="test5">
+        <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+          </agm-map><!--Mapa-->
+  </div>
     <div id="test6">Test 3</div>
   </div>
 </div>
