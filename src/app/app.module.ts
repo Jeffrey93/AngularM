@@ -6,6 +6,7 @@ import { MaterializeModule } from 'angular2-materialize';
 import { AgmCoreModule } from '@agm/core';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
