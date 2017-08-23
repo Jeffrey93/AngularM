@@ -1,7 +1,7 @@
 agm-map {
-    align-self: center;
+    
     height: 438px;
-    width: 80%;
-  margin-left: 10%;
+    width: 100%;
+
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
