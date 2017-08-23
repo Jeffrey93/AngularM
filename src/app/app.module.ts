@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MaterializeModule } from 'angular2-materialize';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,10 @@ import { MaterializeModule } from 'angular2-materialize';
   ],
   imports: [
     BrowserModule,
-    MaterializeModule
+    MaterializeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAcNmYmk-E19uEqsArE0CqQEkWE7VapnZ8'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
