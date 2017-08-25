@@ -7,6 +7,7 @@ import { AgmCoreModule } from '@agm/core';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SectionComponent } from './section/section.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,

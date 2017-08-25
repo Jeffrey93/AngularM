@@ -19,8 +19,8 @@ export class AppComponent {
     {option: '2', value: 'Tacos'}
     ];
   
-    lat: number = 51.678418;
-    lng: number = 7.809007;
+    lat: number = 5.69472;
+    lng: number = -76.66111;
   
   modalActions = new EventEmitter<string|MaterializeAction>();
   openModal() {
