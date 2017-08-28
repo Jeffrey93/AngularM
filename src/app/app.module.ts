@@ -5,15 +5,18 @@ import { AppComponent } from './app.component';
 import { MaterializeModule } from 'angular2-materialize';
 import { AgmCoreModule } from '@agm/core';
 import { LoginComponent } from './login/login.component';
-import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SectionComponent } from './section/section.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { RequestFormComponent } from './forms/src/app/forms/request-form/request-form.component';
+import { RequestFormComponent } from './forms/request-form/request-form.component';
 
-const appRoutes: Routes = [
+//RUTAS
+
+import{APP_ROUTING} from './app.routes'
+
+ /*const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
- /*
+
   {
     path: 'heroes',
     component: HeroListComponent,
@@ -23,8 +26,8 @@ const appRoutes: Routes = [
     redirectTo: '/heroes',
     pathMatch: 'full'
   }/*,
-  { path: '**', component: PageNotFoundComponent }*/
-];
+  { path: '**', component: PageNotFoundComponent }
+];*/
 
 @NgModule({
   declarations: [
@@ -37,11 +40,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    //habilitar modulo route
+    APP_ROUTING,
+    /*habilitar modulo route
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    ),
+    ),*/
     MaterializeModule,
     //importar apikey para mapas
     AgmCoreModule.forRoot({
