@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SectionComponent } from './section/section.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    SectionComponent
+    SectionComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
