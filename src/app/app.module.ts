@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SectionComponent } from './section/section.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { RequestFormComponent } from './forms/src/app/forms/request-form/request-form.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     LoginComponent,
     NavbarComponent,
     SectionComponent,
-    SidenavComponent
+    SidenavComponent,
+    RequestFormComponent
   ],
   imports: [
     BrowserModule,
